@@ -1,7 +1,15 @@
 import React from "react";
 import { Field, reduxForm } from "redux-form";
+import { connect } from 'react-redux';
+import { fetchStreams } from '../../actions'
 
 class StreamList extends React.Component {
+  componentDidMount() {
+    console.log('<StreamList> didMount');
+    
+    this.props.fetchStreams();
+  }
+
   renderInput({ input, label, meta }) {
     return(
       <div className="field">
@@ -20,4 +28,4 @@ class StreamList extends React.Component {
   }
 }
 
-export default StreamList;
+export default connect(null, { fetchStreams })(StreamList);
