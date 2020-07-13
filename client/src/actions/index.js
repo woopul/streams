@@ -8,6 +8,7 @@ import {
   DELETE_STREAM,
   EDIT_STREAM,
 } from "./types";
+import createBrowserHistory from '../history';
 
 export const signIn = (userId) => ({
   type: SIGN_IN,
@@ -23,6 +24,7 @@ export const createStream = (formValues) => async (dispatch, getState) => {
   const response = await streams.post("/streams", { ...formValues, userId });
 
   dispatch({ type: CREATE_STREAM, payload: response.data });
+  createBrowserHistory.push('/')
 };
 
 export const fetchStreams = () => async (dispatch) => {

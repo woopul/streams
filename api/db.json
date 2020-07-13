@@ -36,6 +36,30 @@
       "description": "asd",
       "userId": "117605909871156349456",
       "id": 8
+    },
+    {
+      "title": "newly created stream by me",
+      "description": "this stream should have streamID",
+      "userId": "117605909871156349456",
+      "id": 9
+    },
+    {
+      "title": "newly created stream by me222",
+      "description": "this stream should have streamID22",
+      "userId": "117605909871156349456",
+      "id": 10
+    },
+    {
+      "title": "newly created stream by me222",
+      "description": "this stream should have streamID22",
+      "userId": "117605909871156349456",
+      "id": 11
+    },
+    {
+      "title": "213124",
+      "description": "123sdadas",
+      "userId": "117605909871156349456",
+      "id": 12
     }
   ]
 }
