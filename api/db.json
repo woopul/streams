@@ -1,14 +1,41 @@
 {
   "streams": [
-  {
-    "id": 1,
-    "title": "some stram1",
-    "description": "dupa1"
-  },
-  {
-    "id": 2,
-    "title": "some stram2",
-    "description": "dupa2"
-  }
-]
+    {
+      "id": 1,
+      "title": "some stram1",
+      "description": "dupa1"
+    },
+    {
+      "id": 2,
+      "title": "some stram2",
+      "description": "dupa2"
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "title": "asd",
+      "description": "asd",
+      "id": 5
+    },
+    {
+      "title": "asd",
+      "description": "asd",
+      "id": 6
+    },
+    {
+      "title": "asd",
+      "description": "asd",
+      "id": 7
+    },
+    {
+      "title": "asd",
+      "description": "asd",
+      "userId": "117605909871156349456",
+      "id": 8
+    }
+  ]
 }
