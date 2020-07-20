@@ -13,7 +13,10 @@ const StreamEdit = (props) => {
     }, 2000);
   }, []);
 
-  const onSubmit = (formValues) => console.log(formValues);
+  const onSubmit = (formValues) => {
+    console.log("PROPS", props)
+    props.editStream(props.match.params.id, formValues);
+  };
 
   if (!props.stream) {
     return <p>LOADING...</p>;
