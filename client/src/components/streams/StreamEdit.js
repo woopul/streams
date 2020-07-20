@@ -5,8 +5,6 @@ import StreamForm from "./StreamForm";
 import _ from "lodash";
 
 const StreamEdit = (props) => {
-  console.log(props);
-
   useEffect(() => {
     setTimeout(() => {
       props.fetchStream(props.match.params.id);
