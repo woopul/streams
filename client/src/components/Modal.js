@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import createBrowserHistory from '../history';
 
 const Modal = props => {
 
@@ -9,7 +8,7 @@ const Modal = props => {
   document.body.appendChild(modal);
 
   return ReactDOM.createPortal(
-    <div onClick={() => createBrowserHistory.push('/')} className="ui dimmer modals visible active">
+    <div onClick={props.onDismiss} className="ui dimmer modals visible active">
       <div onClick={e => e.stopPropagation()} className="ui standard modal visible active">
         <div className="header">{props.title}</div>
         <div className="content">

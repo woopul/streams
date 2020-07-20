@@ -18,12 +18,6 @@ const StreamDelete = (props) => {
     }, 2000);
   }, []);
 
-  const completeStreamDeletion = () => (new Promise(resolve => setTimeout(() => {
-    onDismiss()
-    resolve()
-  }, 5000)
-  ))
-  
   const onDismiss = () => createBrowserHistory.push("/");
 
   const onDeleteStream = () => {
@@ -34,7 +28,6 @@ const StreamDelete = (props) => {
       setDeletionMessage(`DELETION COMPLETE`)
     }, 1500);
   }
-
 
   const actions = (
     <>
